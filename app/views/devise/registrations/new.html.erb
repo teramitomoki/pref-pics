@@ -3,8 +3,6 @@
     <div class="form__wrapper">
       <h2 class="page-heading">ユーザー新規登録</h2>
 
-        <%# 「モデル名」にはUserモデルであれば@userを渡しましょう。%>
-        <%# 「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
         <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
 
         <div class="field">
@@ -29,6 +27,15 @@
 
         <div class="actions">
           <%= f.submit "新規登録", class: :form__btn  %>
+        </div>
+
+        <div class="css-cube">
+        <div class="css-face css-forward">1</div>
+        <div class="css-face css-reverse">6</div>
+        <div class="css-face css-right">3</div>
+        <div class="css-face css-left">4</div>
+        <div class="css-face css-top">5</div>
+        <div class="css-face css-bottom">2</div>
         </div>
       <% end %>
     </div>
