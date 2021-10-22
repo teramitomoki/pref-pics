@@ -1,23 +1,23 @@
 <%= form_with model: post, local: true do |f|%>
+
   <div class="field">
-    <%= f.label :title, "プロトタイプの名称" %><br />
+    <%= f.label :image, "投稿画像" %><br />
+    <%= f.file_field :image, id:"prototype_image" %>
+  </div>
+  <div>
+    <%= f.label :title, "都道府県選択" %><br />
+    <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"genre-select"}) %>
+  </div>
+  <div>
+    <%= f.label :title, "ジャンル選択" %><br />
+    <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"genre-select"}) %>
+  </div>
+  <div class="field">
+    <%= f.label :title, "タイトル(任意)" %><br />
     <%= f.text_field :title, id:"prototype_title" %>
   </div>
 
-  <div class="field">
-    <%= f.label :catch_copy, "キャッチコピー" %><br />
-    <%= f.text_area :catch_copy, class: :form__text, id:"prototype_catch_copy" %>
-  </div>
 
-  <div class="field">
-    <%= f.label :concept, "コンセプト" %><br />
-    <%= f.text_area :concept, class: :form__text, id:"prototype_concept" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :image, "プロトタイプの画像" %><br />
-    <%= f.file_field :image, id:"prototype_image" %>
-  </div>
 
   <div class="actions">
     <%= f.submit "投稿する", class: :form__btn  %>
