@@ -30,12 +30,12 @@
         </div>
 
         <div class="css-cube">
-        <div class="css-face css-forward"><img src="miyajima.png" width="100" height="100"></div>
-        <div class="css-face css-reverse"><img src="Mt.fuji.png" width="100" height="100"></div>
-        <div class="css-face css-right"><img src="tokyotower.png" width="100" height="100"></div>
-        <div class="css-face css-left"><img src="zao.png" width="100" height="100"></div>
-        <div class="css-face css-top"><img src="shirakawago.png" width="100" height="100"></div>
-        <div class="css-face css-bottom"><img src="taiyou.png" width="100" height="100"></div>
+        <%= image_tag "tokyotower.png", :class=>"css-face css-forward" %>
+        <%= image_tag "zao.png", :class=>"css-face css-reverse" %>
+        <%= image_tag "miyajima.png", :class=>"css-face css-right" %>
+        <%= image_tag "taiyou.png", :class=>"css-face css-left" %>
+        <%= image_tag "Mt.fuji.png", :class=>"css-face css-top" %>
+        <%= image_tag "shirakawago.png", :class=>"css-face css-bottom" %>
         </div>
       <% end %>
     </div>

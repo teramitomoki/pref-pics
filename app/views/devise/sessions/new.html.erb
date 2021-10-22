@@ -20,13 +20,17 @@
           <%= f.submit "ログイン", class: :form__btn %>
         </div>
         <div class="css-cube">
-        <div class="css-face css-forward">1</div>
-        <div class="css-face css-reverse">6</div>
-        <div class="css-face css-right">3</div>
-        <div class="css-face css-left">4</div>
-        <div class="css-face css-top">5</div>
-        <div class="css-face css-bottom">2</div>
+        <%= image_tag "taiyou.png", :class=>"css-face css-forward" %>
+        <%= image_tag "miyajima.png", :class=>"css-face css-reverse" %>
+        <%= image_tag "zao.png", :class=>"css-face css-right" %>
+        <%= image_tag "tokyotower.png", :class=>"css-face css-left" %>
+        <%= image_tag "shirakawago.png", :class=>"css-face css-top" %>
+        <%= image_tag "Mt.fuji.png", :class=>"css-face css-bottom" %>
         </div>
+
+
+
+        
       <% end %>
     </div>
   </div>

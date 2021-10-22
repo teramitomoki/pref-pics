@@ -16,10 +16,15 @@
     <%= f.label :title, "タイトル(任意)" %><br />
     <%= f.text_field :title, id:"prototype_title" %>
   </div>
-
-
-
   <div class="actions">
     <%= f.submit "投稿する", class: :form__btn  %>
+  </div>
+  <div class="css-hover">
+    <%= image_tag "tokyotower.png", :class=>"css-face css-forward" %>
+    <%= image_tag "zao.png", :class=>"css-face css-reverse" %>
+    <%= image_tag "miyajima.png", :class=>"css-face css-right" %>
+    <%= image_tag "taiyou.png", :class=>"css-face css-left" %>
+    <%= image_tag "Mt.fuji.png", :class=>"css-face css-top" %>
+    <%= image_tag "shirakawago.png", :class=>"css-face css-bottom" %>
   </div>
 <% end %>

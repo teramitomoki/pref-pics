@@ -134,6 +134,7 @@ a {
   border: 1px rgb(238, 6, 57) solid;
 }
 
+/* キューブ */
 .css-cube {                                      /* 立体の大きさ傾きの指定 */
   width: 100px;
   height: 100px;
@@ -168,31 +169,49 @@ a {
   font-size: 50px;
   color: black;
   text-align: center;
-  opacity: 0.5;                                  /* 透明度を指定 */
+  opacity: 1.0;                                  /* 透明度を指定 */
   backface-visibility : visible;                 /* 裏面を表示 */
 }
+.css-hover:hover {                                /* 横軸方向に回転 */
+  transform:rotateY(330deg) rotateX(330deg) rotateZ(370deg);
+}
+.css-hover {
+  width: 100px;
+  height: 100px;
+  margin: 5%;
+  border: none;
+  transform-style: preserve-3d;
+  transform:rotateY(-30deg) rotateX(-30deg) rotateZ(10deg);
+  transition:all 3s;                              /* 回転の速度 */
+  display : inline-block;
+}
+.css-img {                          /* 各面の指定 */
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  line-height: 100px;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  backface-visibility : hidden;                 /* 裏面は非表示 */
+}
 .css-forward {                                   /* 前面の指定 */
-  background: silver;
   transform: translateZ(50px);
 }
 .css-reverse {                                   /* 後面の指定 */
-  background: lime;
   transform: rotateY(180deg) translateZ(50px);
 }
 .css-right {                                     /* 右面の指定 */
-  background: red;
   transform: rotateY(90deg) translateZ(50px);
 }
 .css-left {                                      /* 左面の指定 */
-  background: aqua;
   transform: rotateY(-90deg) translateZ(50px);
 }
 .css-top {                                       /* 上面の指定 */
-  background: yellow;
   transform: rotateX(90deg) translateZ(50px);
 }
 .css-bottom {                                    /* 下面の指定 */
-  background: fuchsia;
   transform: rotateX(-90deg) translateZ(50px);
 }
 /* フォーム周り */
