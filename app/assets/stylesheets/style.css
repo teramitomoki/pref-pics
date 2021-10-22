@@ -134,7 +134,67 @@ a {
   border: 1px rgb(238, 6, 57) solid;
 }
 
-
+.css-cube {                                      /* 立体の大きさ傾きの指定 */
+  width: 100px;
+  height: 100px;
+  margin: 5%;
+  border: none;
+  transform-style: preserve-3d;                  /* ３Ｄで表示 */
+  transform:rotateY(-30deg) rotateX(-30deg) rotateZ(10deg); /* 立体の傾き */
+  display : inline-block;
+  animation: cubeAnime 3.6s linear infinite;       /* 動きの指定 */
+}
+@keyframes cubeAnime{                            /* 回転方向の指定 */
+   50% { transform: rotateY(-30deg) rotateX(-30deg) rotateZ(10deg);}
+  100% { transform: rotateY(330deg) rotateX(330deg) rotateZ(10deg);}
+}
+.css-img {                                      /* 各面の指定 */
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  line-height: 100px;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  backface-visibility : hidden;                 /* 裏面は非表示 */
+}
+.css-face {                                      /* 各面の指定 */
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  line-height: 100px;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  opacity: 0.5;                                  /* 透明度を指定 */
+  backface-visibility : visible;                 /* 裏面を表示 */
+}
+.css-forward {                                   /* 前面の指定 */
+  background: silver;
+  transform: translateZ(50px);
+}
+.css-reverse {                                   /* 後面の指定 */
+  background: lime;
+  transform: rotateY(180deg) translateZ(50px);
+}
+.css-right {                                     /* 右面の指定 */
+  background: red;
+  transform: rotateY(90deg) translateZ(50px);
+}
+.css-left {                                      /* 左面の指定 */
+  background: aqua;
+  transform: rotateY(-90deg) translateZ(50px);
+}
+.css-top {                                       /* 上面の指定 */
+  background: yellow;
+  transform: rotateX(90deg) translateZ(50px);
+}
+.css-bottom {                                    /* 下面の指定 */
+  background: fuchsia;
+  transform: rotateX(-90deg) translateZ(50px);
+}
 /* フォーム周り */
 .form__wrapper{
   min-height: calc(100vh - 161px);
