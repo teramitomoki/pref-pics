@@ -1,0 +1,17 @@
+<div class="main">
+  <div class="inner">
+    <div class="user__wrapper">
+      <h2 class="page-heading">
+      </h2>
+      <table class="table">
+      </table>
+      <h2 class="page-heading">
+        <p><%= @user.name %>さんの投稿</p>
+      </h2>
+      <div class="user__card">
+        <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
+        <%= render partial: 'posts/post', collection: @user.posts %>
+      </div>
+    </div>
+  </div>
+</div>
