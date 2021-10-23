@@ -1,7 +1,10 @@
 <main class="main">
   <div class="inner">
     <div class="card__wrapper">
-      <%= render partial: 'post', collection: @prot %>
+      <% @posts.each do |post|%>
+        <%= post.title %>
+        <%= image_tag post.image, size: "100x100" %>
+      <% end %>
     </div>
   </div>
 </main>
