@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 2021_10_23_105502) do
   create_table "posts", charset: "utf8", force: :cascade do |t|
     t.integer "prefecture47_id", null: false
     t.integer "genre_id", null: false
-    t.string "title"
+    t.string "title", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
