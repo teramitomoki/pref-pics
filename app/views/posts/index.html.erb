@@ -6,16 +6,24 @@
     <%= link_to "#{current_user.name}さん","/users/#{current_user.id}", class: :greeting__link %>
     </div>
   <% end %>
+  <div class="css-hover">
+    <%= image_tag "tokyotower.png", :class=>"css-face css-forward" %>
+    <%= image_tag "zao.png", :class=>"css-face css-reverse" %>
+    <%= image_tag "miyajima.png", :class=>"css-face css-right" %>
+    <%= image_tag "taiyou.png", :class=>"css-face css-left" %>
+    <%= image_tag "Mt.fuji.png", :class=>"css-face css-top" %>
+    <%= image_tag "shirakawago.png", :class=>"css-face css-bottom" %>
+  </div>
     <div id="japan-map" class="clearfix">
 
 <div id="hokkaido-touhoku" class="clearfix">
 	<p class="area-title">北海道・東北</p>
 	<div class="area">
-		<a href="#">
-        	<div id="hokkaido">
-        		<p>北海道</p>
-          	</div>
-		</a>
+    <a href="#">
+      <div id="hokkaido">
+        <p>北海道</p>
+      </div>
+    </a>
 		<a href="#">
 			<div id="aomori">
 				<p>青森</p>
@@ -284,12 +292,7 @@
 		</a>
 	</div>
 </div>
-    <div class="card__wrapper">
-      <%# <%= render partial: 'post', collection: @post %> 
+    <div class="card__wrapper"> 
     </div>
   </div>
 </main>
-<%= link_to(new_post_path, class: 'post-btn') do %>
-  <span class='post-btn-text'>投稿する</span>
-  <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "post-btn-icon" %>
-<% end %>

@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   get 'posts/index'
   root to: "posts#index"
   resources :posts
-  resources :users, only: [:show, :edit, :undate]
-  
+  resources :users, only: [:show, :edit, :update]
+  resources :prefectures
 end
