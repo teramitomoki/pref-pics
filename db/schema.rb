@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_22_131010) do
+ActiveRecord::Schema.define(version: 2021_10_23_105502) do
 
   create_table "active_storage_attachments", charset: "utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -41,13 +41,18 @@ ActiveRecord::Schema.define(version: 2021_10_22_131010) do
   end
 
   create_table "posts", charset: "utf8", force: :cascade do |t|
-    t.integer "prefecture_id", null: false
+    t.integer "prefecture47_id", null: false
     t.integer "genre_id", null: false
     t.string "title"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_posts_on_user_id"
+  end
+
+  create_table "prefectures", charset: "utf8", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", charset: "utf8", force: :cascade do |t|

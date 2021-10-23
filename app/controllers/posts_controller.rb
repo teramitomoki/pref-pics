@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.order(id: 'DESC')
+    @prefectures = Prefecture.all
   end
 
   def new
@@ -12,7 +13,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.create(post_params)
     if @post.save
-      redirect_to root_path
+      redirect_to prefectures_path
     else
       render :new
     end
