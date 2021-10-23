@@ -6,6 +6,6 @@ class PrefecturesController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:prefecture_id, :genre_id, :image, :title).merge(user_id: current_user.id)
+    params.require(:post).permit(:prefecture47_id, :genre_id, :image, :title).merge(user_id: current_user.id)
   end
 end
