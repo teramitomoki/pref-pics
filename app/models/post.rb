@@ -8,5 +8,6 @@ class Post < ApplicationRecord
   validates :genre_id, numericality: { other_than: 1 , message: "選択してください" }
   validates :image,    presence: true
   validates :user_id,  presence: true
+  validates :title,    presence: true
 
 end
