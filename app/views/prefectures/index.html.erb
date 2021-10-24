@@ -2,8 +2,16 @@
   <div class="inner">
     <div class="card__wrapper">
       <% @posts.each do |post|%>
-        <%= post.title %>
-        <%= image_tag post.image, size: "100x100" %>
+        <div class="card">
+          <%= image_tag post.image, size: "200x200" %>
+            <div class="card__body">
+              <%= post.title %>
+              <p class="card__summary">
+                <%= post.prefecture47_id %>
+                <%= post.genre_id %>
+              </p>
+            </div>
+        </div>
       <% end %>
     </div>
   </div>
