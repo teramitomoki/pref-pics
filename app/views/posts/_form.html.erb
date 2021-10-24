@@ -1,31 +1,41 @@
 <%= form_with model: post, local: true do |f|%>
-
-  <div class="field">
-    <%= f.label :image, "投稿画像" %><br />
-    <%= f.file_field :image, id:"prototype_image" %>
-  </div>
-  <div class="field">
-    <%= f.label :title, "都道府県選択" %><br />
-    <%= f.collection_select(:prefecture47_id, Prefecture47.all, :id, :name, {}, {class:"genre-select"}) %>
-  </div>
-  <div class="field">
-    <%= f.label :title, "ジャンル選択" %><br />
-    <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"genre-select"}) %>
-  </div>
-  <div class="field">
-    <%= f.label :title, "タイトル(必須)" %><br />
-    <%= f.text_field :title, id:"prototype_title" %>
-  </div>
-  <div class="actions">
-    <%= f.submit "投稿する", class: :form__btn  %>
+  <div class="sinkitoukou">
+    <div class="css-hover">
+        <%= image_tag "tokyotower.png", :class=>"css-face css-forward" %>
+        <%= image_tag "zao.png", :class=>"css-face css-reverse" %>
+        <%= image_tag "miyajima.png", :class=>"css-face css-right" %>
+        <%= image_tag "taiyou.png", :class=>"css-face css-left" %>
+        <%= image_tag "Mt.fuji.png", :class=>"css-face css-top" %>
+        <%= image_tag "shirakawago.png", :class=>"css-face css-bottom" %>
+    </div>
+    <div class="nyuuryoku">
+      <div class="field">
+        <%= f.label :image, "投稿画像" %><br />
+        <%= f.file_field :image, id:"prototype_image" %>
+      </div>
+      <div class="field">
+        <%= f.label :title, "都道府県選択" %><br />
+        <%= f.collection_select(:prefecture47_id, Prefecture47.all, :id, :name, {}, {class:"genre-select"}) %>
+      </div>
+      <div class="field">
+        <%= f.label :title, "ジャンル選択" %><br />
+        <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"genre-select"}) %>
+      </div>
+      <div class="field">
+        <%= f.label :title, "タイトル(必須)" %><br />
+        <%= f.text_field :title, id:"prototype_title" %>
+      </div>
+      <div class="toukousuru">
+        <%= f.submit "投稿する", class: :form__btn  %>
+      </div>
+    </div>
+    <div class="css-hover">
+      <%= image_tag "taiyou.png", :class=>"css-face css-forward" %>
+      <%= image_tag "miyajima.png", :class=>"css-face css-reverse" %>
+      <%= image_tag "zao.png", :class=>"css-face css-right" %>
+      <%= image_tag "tokyotower.png", :class=>"css-face css-left" %>
+      <%= image_tag "shirakawago.png", :class=>"css-face css-top" %>
+      <%= image_tag "Mt.fuji.png", :class=>"css-face css-bottom" %>
+    </div>
   </div>
 <% end %>
-
-<div class="css-hover">
-    <%= image_tag "tokyotower.png", :class=>"css-face css-forward" %>
-    <%= image_tag "zao.png", :class=>"css-face css-reverse" %>
-    <%= image_tag "miyajima.png", :class=>"css-face css-right" %>
-    <%= image_tag "taiyou.png", :class=>"css-face css-left" %>
-    <%= image_tag "Mt.fuji.png", :class=>"css-face css-top" %>
-    <%= image_tag "shirakawago.png", :class=>"css-face css-bottom" %>
-  </div>

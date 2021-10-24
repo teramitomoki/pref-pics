@@ -38,13 +38,21 @@ a {
 
 .header {
   background-color: rgb(233, 247, 233);
-  margin-bottom: 48px;
+  margin-bottom: 20px;
   padding: 20px 0;
-
+}
+body{
+  height: 100px;
+  align-items: center;
+  background-color: white
 }
 .inner {
   width: 1024px;
   margin: 0 auto;
+}
+.kyubu {
+  display: flex;
+  justify-content: space-around;
 }
 .nav {
   width: 100%;
@@ -184,6 +192,7 @@ a {
   transform:rotateY(-30deg) rotateX(-30deg) rotateZ(10deg);
   transition:all 3s;                              /* 回転の速度 */
   display : inline-block;
+
 }
 .css-img {                          /* 各面の指定 */
   position: absolute;
@@ -217,6 +226,31 @@ a {
 /* フォーム周り */
 .form__wrapper{
   min-height: calc(100vh - 161px);
+  justify-content: center;
+  margin-top: 100px;
+}
+.user-sinkitouroku{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 150px;
+
+}
+.sinkitoukou{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nyuuryoku{
+  display: block;
+}
+
+.nyuuryoku .field {
+  text-align: left;
+}
+
+.toukousuru {
+  text-align: left;
 }
 
 .form__text {
@@ -225,10 +259,12 @@ a {
 
 .field{
   margin: 10px 0;
+  text-align: center;
 }
 
 .actions{
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .form__btn{
@@ -253,9 +289,10 @@ a {
 }
 
 /* メイン */
-.body{
-  background-color: rgb(255, 255, 255);
+.subete{
+  align-items: center;
 }
+
 .greeting{
   margin-bottom: 20px;
 }
@@ -265,16 +302,18 @@ a {
 .page-heading {
   font-size: 30px;
   margin-bottom: 28px;
+  text-align: center;
 }
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   min-height: calc(100vh - 161px);
 }
 .card {
-  width: calc((100% - 50px) / 3);
+  width: calc((100% - 10px) / 4);
   margin-bottom: 40px;
 }
 .card__img {
@@ -285,6 +324,10 @@ a {
   font-size: 20px;
   margin-bottom: 8px;
   font-weight: bold;
+}
+.card__body{
+  display: flex;
+  justify-content: center;
 }
 .card__summary {
   font-size: 16px;

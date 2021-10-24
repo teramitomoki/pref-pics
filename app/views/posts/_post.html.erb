@@ -3,8 +3,8 @@
   <div class="card__body">
     <%= link_to post.title, post_path(post.id), class: :card__title%>
     <p class="card__summary">
-      <%= post.catch_copy %>
+      <%# <%= post.catch_copy %>
     </p>
-    <%= link_to "#{post.user.name}さん",user_path(post.user.id), class: :card__user %>
+    <%# <%= link_to "#{post.user.name}さん",user_path(post.user.id), class: :card__user %> 
   </div>
 </div>
