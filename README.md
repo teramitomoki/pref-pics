@@ -141,4 +141,6 @@ test1111
 - has_many :posts
 
 # 連絡先
-寺見友基 テラミトモキ   Gmail/teramitomoki@gmail.com   twitter/https://twitter.com/ttomo200100
+寺見友基 テラミトモキ  
+Gmail / teramitomoki@gmail.com  
+twitter / https://twitter.com/ttomo200100
