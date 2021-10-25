@@ -9,6 +9,16 @@ https://pref-pics.herokuapp.com/
 誰かの投稿した写真で、行きたい場所、次に行く場所の雰囲気が
 少し知れるかもしれません。
 また新しいスポットへ足を運ぶきっかけになるかも...!!
+# DEMO
+トップページ
+[![Image from Gyazo](https://i.gyazo.com/3c3576db42263856e8ef3822dd47c85b.gif)](https://gyazo.com/3c3576db42263856e8ef3822dd47c85b)
+
+サインアップページ
+[![Image from Gyazo](https://i.gyazo.com/007e9cb08d95df4695e6d825502781e3.gif)](https://gyazo.com/007e9cb08d95df4695e6d825502781e3)
+
+ログインページ
+[![Image from Gyazo](https://i.gyazo.com/d9cd4242368e1694713508e37b07f2b4.gif)](https://gyazo.com/d9cd4242368e1694713508e37b07f2b4)
+
 # ID/Pass
 ID:admin  
 Pass:2222
@@ -72,16 +82,6 @@ test1111
 今後は都道府県投毎に投稿一覧ページを見やすくし、詳細も実装したく考えています。
 いいね機能で、気に入った投稿を管理できるようにし、〇〇県の画像を見つけやすいよう実装すべきと考えています。
 
-# DEMO
-トップページ
-[![Image from Gyazo](https://i.gyazo.com/3c3576db42263856e8ef3822dd47c85b.gif)](https://gyazo.com/3c3576db42263856e8ef3822dd47c85b)
-
-サインアップページ
-[![Image from Gyazo](https://i.gyazo.com/007e9cb08d95df4695e6d825502781e3.gif)](https://gyazo.com/007e9cb08d95df4695e6d825502781e3)
-
-ログインページ
-[![Image from Gyazo](https://i.gyazo.com/d9cd4242368e1694713508e37b07f2b4.gif)](https://gyazo.com/d9cd4242368e1694713508e37b07f2b4)
-
 新規投稿ページ
 [![Image from Gyazo](https://i.gyazo.com/84cfc6ef3e0fe3ab5ccf47f1e2e9deb0.gif)](https://gyazo.com/84cfc6ef3e0fe3ab5ccf47f1e2e9deb0)
 
@@ -117,18 +117,18 @@ test1111
 
 | Column | Type       | Options                        |
 | ------ | ---------- | ------------------------------ |
-| post   | references | null: false, foreign_key: true |
+| name   | references | null: false, foreign_key: true |
 
 ### Association
 
-- has_one :post
+- has_many :posts
 
 ## genres テーブル
 
 | Column | Type       | Options                        |
 | ------ | ---------- | ------------------------------ |
-| post   | references | null: false, foreign_key: true |
+| name   | references | null: false, foreign_key: true |
 
 ### Association
 
-- has_one :post
+- has_many :posts
