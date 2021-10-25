@@ -3,6 +3,10 @@ class PrefecturesController < ApplicationController
     @posts = Post.all.order(id: 'DESC')
   end
 
+  def show
+    @post = Post.find(params[:id])
+  end
+
   private
 
   def post_params
