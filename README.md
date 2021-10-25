@@ -58,18 +58,23 @@ test1111
 * 地域の有名なスポットを表示
 * サインアップ、ログイン画面では自動で回転  
 * トップページ、新規投稿画面ではマウスオーバーで回転  
+[![Image from Gyazo](https://i.gyazo.com/7eabe9f1049c81841963633568760c1b.gif)](https://gyazo.com/7eabe9f1049c81841963633568760c1b)
 
 ## レスポンシブ対応
 * 横幅777pxまでは日本列島を表示  
 * 501px~776pxまでは地域別で表示  
 * 500px以下はリスト表示
+[![Image from Gyazo](https://i.gyazo.com/7f0be758bb1ab7072d5a48cc538d492b.gif)](https://gyazo.com/7f0be758bb1ab7072d5a48cc538d492b)
+
+## ボタン発光
+* CSSでhoverの背景を白くすることで発光しているかのように表示
+[![Image from Gyazo](https://i.gyazo.com/5558de94533deb1442831e7a4cd305a6.gif)](https://gyazo.com/5558de94533deb1442831e7a4cd305a6)
 
 ## 画像投稿
 * 画像を投稿、一覧表示  
 * 都道府県、ジャンルをアクティブハッシュにて実装  
 * image、都道府県、ジャンル、タイトルは入力必須  
 
-新規投稿ページ
 [![Image from Gyazo](https://i.gyazo.com/84cfc6ef3e0fe3ab5ccf47f1e2e9deb0.gif)](https://gyazo.com/84cfc6ef3e0fe3ab5ccf47f1e2e9deb0)
 
 # 今後実装したいこと
