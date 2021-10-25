@@ -69,6 +69,9 @@ test1111
 * 都道府県、ジャンルをアクティブハッシュにて実装  
 * image、都道府県、ジャンル、タイトルは入力必須  
 
+新規投稿ページ
+[![Image from Gyazo](https://i.gyazo.com/84cfc6ef3e0fe3ab5ccf47f1e2e9deb0.gif)](https://gyazo.com/84cfc6ef3e0fe3ab5ccf47f1e2e9deb0)
+
 # 今後実装したいこと
 * 各都道府県毎の一覧ページ作成  
 * 一覧にタイトル、都道府県、ジャンルを表示
@@ -82,8 +85,7 @@ test1111
 今後は都道府県投毎に投稿一覧ページを見やすくし、詳細も実装したく考えています。
 いいね機能で、気に入った投稿を管理できるようにし、〇〇県の画像を見つけやすいよう実装すべきと考えています。
 
-新規投稿ページ
-[![Image from Gyazo](https://i.gyazo.com/84cfc6ef3e0fe3ab5ccf47f1e2e9deb0.gif)](https://gyazo.com/84cfc6ef3e0fe3ab5ccf47f1e2e9deb0)
+
 
 # テーブル設計
 
