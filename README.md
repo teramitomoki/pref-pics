@@ -72,7 +72,7 @@ test1111
 
 ## 画像投稿
 * 画像を投稿、一覧表示  
-* 都道府県、ジャンルをアクティブハッシュにて実装  
+* 都道府県、ジャンルをActiveHashにて実装  
 * image、都道府県、ジャンル、タイトルは入力必須  
 
 [![Image from Gyazo](https://i.gyazo.com/84cfc6ef3e0fe3ab5ccf47f1e2e9deb0.gif)](https://gyazo.com/84cfc6ef3e0fe3ab5ccf47f1e2e9deb0)
