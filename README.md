@@ -77,7 +77,7 @@ test1111
 [![Image from Gyazo](https://i.gyazo.com/3c3576db42263856e8ef3822dd47c85b.gif)](https://gyazo.com/3c3576db42263856e8ef3822dd47c85b)
 
 サインアップページ
-[![Image from Gyazo](https://i.gyazo.com/e57f175398b8d2e181c8a40023beb015.gif)](https://gyazo.com/e57f175398b8d2e181c8a40023beb015)
+[![Image from Gyazo](https://i.gyazo.com/007e9cb08d95df4695e6d825502781e3.gif)](https://gyazo.com/007e9cb08d95df4695e6d825502781e3)
 
 ログインページ
 [![Image from Gyazo](https://i.gyazo.com/d9cd4242368e1694713508e37b07f2b4.gif)](https://gyazo.com/d9cd4242368e1694713508e37b07f2b4)
