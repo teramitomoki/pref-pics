@@ -243,14 +243,15 @@ body{
 }
 .nyuuryoku{
   display: block;
+  text-align: center;
 }
 
 .nyuuryoku .field {
-  text-align: left;
+  text-align: center;
 }
 
 .toukousuru {
-  text-align: left;
+  text-align: center;
 }
 
 .form__text {
@@ -267,6 +268,20 @@ body{
   text-align: center;
 }
 
+.image-label {
+  text-align: center;
+}
+
+.title-field{
+  width: 240px;
+  height: 27px;
+}
+.file2{
+  margin-left: 15px;
+}
+.field_ah{
+  margin-top: 10px;
+}
 .form__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
@@ -286,6 +301,10 @@ body{
   color: rgb(77, 228, 97);
   background: white;
   border: 1px rgb(77, 228, 97) solid;
+}
+.genre-select{
+  width: 240px;
+  height: 27px;
 }
 
 /* メイン */

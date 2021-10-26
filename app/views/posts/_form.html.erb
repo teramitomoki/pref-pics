@@ -9,22 +9,25 @@
         <%= image_tag "shirakawago.png", :class=>"css-face css-bottom" %>
     </div>
     <div class="nyuuryoku">
-      <div class="field">
-        <%= f.label :image, "投稿画像" %><br />
-        <%= f.file_field :image, id:"prototype_image" %>
+      <div class="field_toukou">
+        <%= f.label :image, "投稿画像", class: "image-label" %><br />
+        <%= f.file_field :image, id:"prototype_image", class: "file2" %>
       </div>
       <div class="field">
-        <%= f.label :title, "都道府県選択" %><br />
-        <%= f.collection_select(:prefecture47_id, Prefecture47.all, :id, :name, {}, {class:"genre-select"}) %>
-      </div>
-      <div class="field">
-        <%= f.label :title, "ジャンル選択" %><br />
-        <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"genre-select"}) %>
+        <div class="field_ah">
+          <%= f.label :title, "都道府県" %><br />
+          <%= f.collection_select(:prefecture47_id, Prefecture47.all, :id, :name, {}, {class:"genre-select"}) %>
+        </div>
+        <div class="field_ah">
+          <%= f.label :title, "ジャンル" %><br />
+          <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"genre-select"}) %>
+        </div>
       </div>
       <div class="field">
         <%= f.label :title, "タイトル(必須)" %><br />
-        <%= f.text_field :title, id:"prototype_title" %>
+        <%= f.text_field :title, id:"prototype_title", class: "title-field" %>
       </div>
+      
       <div class="toukousuru">
         <%= f.submit "投稿する", class: :form__btn  %>
       </div>
