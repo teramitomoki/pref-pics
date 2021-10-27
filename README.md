@@ -76,7 +76,7 @@ test1111
 * 都道府県、ジャンルをActiveHashにて実装  
 * image、都道府県、ジャンル、タイトルは入力必須  
 
-[![Image from Gyazo](https://i.gyazo.com/b17f3eb42d8cb4de46580aa5317c72c3.gif)](https://gyazo.com/b17f3eb42d8cb4de46580aa5317c72c3)
+[![Image from Gyazo](https://i.gyazo.com/228ddc25f63453baabd8a006a9e7bd75.gif)](https://gyazo.com/228ddc25f63453baabd8a006a9e7bd75)
 
 # 今後実装したいこと
 * 各都道府県毎の一覧ページ作成  
