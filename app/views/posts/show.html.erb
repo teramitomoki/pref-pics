@@ -5,7 +5,7 @@
         <p class="prototype__hedding">
           <%= @post.title%>
         </p>
-        <%= link_to "#{@post.user_id}さん","/users/#{@post.user_id.name}", class: :prototype__user %>
+        <%= link_to "#{@post.user_id}さん","/users/#{@post.user_id}", class: :prototype__user %>
         <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
         <% if user_signed_in? && current_user.id == @post.user_id %>
           <div class="prototype__manage">
@@ -20,15 +20,15 @@
         <div class="prototype__comments">
           <%# ログインしているユーザーには以下のコメント投稿フォームを表示する %>
             <% if user_signed_in? %>
-            <%= form_with model:[@post], local: true do |f|%>
-              <div class="field">
-                <%= f.label :concept, "コメント" %><br />
-                <%= f.text_field :concept, id:"comment_content" %>
-              </div>
-              <div class="actions">
-                <%= f.submit "送信する", class: :form__btn  %>
-              </div>
-            <% end %>
+              <%= form_with model:[@post], local: true do |f|%>
+                <div class="field">
+                  <%= f.label :concept, "コメント" %><br />
+                  <%= f.text_field :concept, id:"comment_content" %>
+                </div>
+                <div class="actions">
+                  <%= f.submit "送信する", class: :form__btn  %>
+                </div>
+              <% end %>
             <% end %>
           <%# // ログインしているユーザーには上記を表示する %>
         </div>
