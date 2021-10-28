@@ -5,7 +5,14 @@ class PrefecturesController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @user = @post.user_id
   end
+  
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+  end
+
 
   private
 

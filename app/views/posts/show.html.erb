@@ -5,7 +5,7 @@
         <p class="prototype__hedding">
           <%= @post.title%>
         </p>
-        <%= link_to "#{@post.user.name}さん","/users/#{@post.user.id}", class: :prototype__user %>
+        <%= link_to "#{@post.user_id}さん","/users/#{@post.user_id.name}", class: :prototype__user %>
         <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
         <% if user_signed_in? && current_user.id == @post.user_id %>
           <div class="prototype__manage">
@@ -17,24 +17,10 @@
         <div class="prototype__image">
           <%= image_tag @post.image %>
         </div>
-        <div class="prototype__body">
-          <div class="prototype__detail">
-            <p class="detail__title">キャッチコピー</p>
-            <p class="detail__message">
-              <%= @post.catch_copy %>
-            </p>
-          </div>
-          <div class="prototype__detail">
-            <p class="detail__title">コンセプト</p>
-            <p class="detail__message">
-              <%= @post.concept %>
-            </p>
-          </div>
-        </div>
         <div class="prototype__comments">
           <%# ログインしているユーザーには以下のコメント投稿フォームを表示する %>
             <% if user_signed_in? %>
-            <%= form_with model:[@prototype, @comment], local: true do |f|%>
+            <%= form_with model:[@post], local: true do |f|%>
               <div class="field">
                 <%= f.label :concept, "コメント" %><br />
                 <%= f.text_field :concept, id:"comment_content" %>
@@ -45,16 +31,6 @@
             <% end %>
             <% end %>
           <%# // ログインしているユーザーには上記を表示する %>
-          <ul class="comments_lists">
-            <%# 投稿に紐づくコメントを一覧する処理を記述する %>
-              <li class="comments_list">
-                <% @comments.each do |comment| %>
-                <%= comment.concept %>
-                <%= link_to comment.user.name,"/users/#{comment.user.id}", class: :comment_user %>
-              <% end %>
-              </li>
-            <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
-          </ul>
         </div>
       </div>
     </div>

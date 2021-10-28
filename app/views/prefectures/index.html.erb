@@ -3,14 +3,16 @@
     <div class="card__wrapper">
       <% @posts.each do |post|%>
         <div class="card">
-          <%= image_tag post.image, size: "200x200" %>
-            <div class="card__body">
-              <%= post.title %>
-              <p class="card__summary">
-                <%= post.prefecture47.name %>
-                <%= post.genre.name %>
-              </p>
-            </div>
+          <%= link_to post_path(post.id), method: :get do %>
+            <%= image_tag post.image, size: "200x200" %>
+              <div class="card__body">
+                <%= post.title %>
+                <p class="card__summary">
+                  <%= post.prefecture47.name %>
+                  <%= post.genre.name %>
+                </p>
+              </div>
+          <% end %>
         </div>
       <% end %>
     </div>
