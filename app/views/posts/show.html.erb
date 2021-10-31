@@ -5,7 +5,9 @@
         <p class="prototype__hedding">
           <%= @post.title%>
         </p>
-        <%= link_to "#{@post.user_id}さん","/users/#{@post.user_id}", class: :prototype__user %>
+        <div class="prototype__user">
+        <%= link_to(@user.name,"users/#{@user.id}") %>さん
+        </div>
         <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
         <% if user_signed_in? && current_user.id == @post.user_id %>
           <div class="prototype__manage">

@@ -11,6 +11,10 @@ class PostsController < ApplicationController
   end
 
   def create
+    @post = Post.new(
+      content: params[:content],
+      user_id: @current_user.id
+    )
     @post = Post.create(post_params)
     if @post.save
       redirect_to prefectures_path
@@ -20,8 +24,8 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(params[:id])
-    @user = @post.user_id
+    @post = Post.find_by(id: params[:id])
+    @user = User.find_by(id: @post.user_id)
   end
 
   def edit
