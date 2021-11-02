@@ -11,10 +11,6 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(
-      content: params[:content],
-      user_id: @current_user.id
-    )
     @post = Post.create(post_params)
     if @post.save
       redirect_to prefectures_path
