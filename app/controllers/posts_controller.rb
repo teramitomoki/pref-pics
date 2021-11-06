@@ -43,8 +43,6 @@ class PostsController < ApplicationController
     redirect_to prefectures_path
   end
 
-
-
   private
 
   def post_params
