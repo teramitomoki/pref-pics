@@ -139,8 +139,3 @@ test1111
 ### Association
 
 - has_many :posts
-
-# 連絡先
-寺見友基 テラミトモキ  
-Gmail / teramitomoki@gmail.com  
-twitter / https://twitter.com/ttomo200100
